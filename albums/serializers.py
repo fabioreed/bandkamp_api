@@ -9,7 +9,7 @@ class AlbumSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Album
-        fields = ['id', 'name', 'year', 'user'] #ou user_id
+        fields = ['id', 'name', 'year', 'user']
         extra_kwargs = {
             'id': {'read_only': True},
             'user': {'read_only': True}
